@@ -2,9 +2,13 @@
 
 # 1 - Definir as variáveis. OBS: Pegar as informações no próprio lab do desafio
 
+````
 export ZONE=
+````
 
+````
 export INSTANCE_NAME=
+````
 
 export PORT=
 
