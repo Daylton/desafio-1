@@ -10,15 +10,21 @@ export ZONE=
 export INSTANCE_NAME=
 ````
 
+````
 export PORT=
-
+````
+````
 export FIREWALL_NAME=
+````
 
 # 2 - Definir a zona
+````
 export REGION=${ZONE::-2}
+````
 
 # Tarefa 1
 # 3 - Criar a instância
+````
 
 gcloud compute instances create $INSTANCE_NAME \
 --zone $ZONE \
@@ -110,3 +116,5 @@ gcloud compute forwarding-rules create $FIREWALL_NAME \
 --global \
 --target-http-proxy http-lb-proxy \
 --ports 80
+
+````
